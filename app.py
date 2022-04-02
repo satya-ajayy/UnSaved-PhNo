@@ -10,7 +10,7 @@ def home():
         phno = request.form.get('phno')
         msg = request.form.get('msg').title()
         wb.open(f'https://api.whatsapp.com/send/?phone=91{phno}&text={msg}')
-        # print(phno, msg)
+        print(phno, msg)
     return render_template('home.html')
 
 

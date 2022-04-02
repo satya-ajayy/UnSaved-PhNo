@@ -10,7 +10,7 @@
 </head>
 
 <body>
-       <div class="box">
+    <div class="box">
     <h2>Whatsapp Message</h2>
     {% with messages = get_flashed_messages() %}
       {% if messages %}
@@ -22,8 +22,10 @@
     <form method="post">
         <input type="tel" name="phno" placeholder="Phone Number" required="required"/>
         <input type="text" name="msg" placeholder="Message" required="required"/>
-        <button type="submit" class="btn btn-primary btn-block btn-large">Send Msg</button>
     </form>
+        <a href="https://api.whatsapp.com/send/?phone=918790163274&text=Hi">
+            <button class="btn btn-primary btn-block btn-large">Send Msg</button>
+        </a>
 </div>
 </body>
 </html>

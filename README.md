@@ -1,2 +1,3 @@
 # UnSaved-PhNo
-Helps To Send A Message Without Saving A Phone Number
+A minimal Flask web application that allows users to send ,messages without saving numbers to contacts in whatsapp.<br>
+Link: https://unsaved-phno-740955904071.asia-south1.run.app

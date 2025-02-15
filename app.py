@@ -6,11 +6,11 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
-        phno = request.form.get('phno')
-        msg = request.form.get('msg').title()
-        return redirect(f'https://api.whatsapp.com/send/?phone=91{phno}&text={msg}')
+        phNumber = request.form.get('phno')
+        message = request.form.get('msg').title()
+        return redirect(f'https://api.whatsapp.com/send/?phone=91{phNumber}&text={message}')
     return render_template('home.html')
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(debug=True)
